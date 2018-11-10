@@ -21,23 +21,22 @@
 
        <!----------------------------------- Page-content------------------------------------- -->
        <!-------------------------------------contains 3 custom widgetize areas------------------------------------------------ -->
-            <div class="entry-content">
-			    <ul>
-				   <li style="float:left;clear:both;">	
-				        <div class= "site-content.widget-area">
+            <main class="entry-content" style="display:grid; grid-gap:1rem; grid-template-columns:repeat(autofit,minnax(300px, 1fr)); max-width:10000px;margin:0px; ">
+			    
+				        <div class= "site-content.widget-area" style="display:flex;flex-flow:column;border:2px solid red;border-radius:1rem;padding:2rem;">
 
 									<?php if ( is_active_sidebar( 'self-test' ) ) : ?>
-									<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+									<div id="primary-sidebar" class="primary-sidebar widget-area" style="">
 										<?php dynamic_sidebar( 'self-test' ); ?>
 									</div><!-- #primary-sidebar -->
 									<?php endif; ?>
 
-							</div><!-- .widget-area -->	
-				  </li>	
+						</div><!-- .widget-area -->	
+				  
 
 
-				   <li style="float:right;margin:25px;">		
-							<div class= "site-content.widget-area">
+				   	
+							<div class= "site-content.widget-area" style="display:flex;flex-flow:column;border:2px solid red;border-radius:1rem;padding:2rem;">
 
 									<?php if ( is_active_sidebar( 'past-papers' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
@@ -46,10 +45,10 @@
 									<?php endif; ?>
 
 							</div><!-- .widget-area -->
-				 </li>	
+				 	
 							
-				  <li style="float:right;">		
-							<div class= "site-content.widget-area">
+				 	
+							<div class= "site-content.widget-area" style="display:flex;flex-flow:column;border:2px solid red;border-radius:1rem;padding:2rem;">
 
 									<?php if ( is_active_sidebar( 'video-lessons' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
@@ -58,12 +57,12 @@
 									<?php endif; ?>
 
 							</div><!-- .widget-area -->
-				 </li>	
+					
 
 							
 
-           </ul>
-    	   </div><!-- .End entry-content -->
+           
+    	   </main><!-- .End entry-content -->
 
 
 		<!----------------------------------- Page-footer------------------------------------- -->
