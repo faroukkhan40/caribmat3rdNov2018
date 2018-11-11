@@ -21,9 +21,9 @@
 
        <!----------------------------------- Page-content------------------------------------- -->
        <!-------------------------------------contains 3 custom widgetize areas------------------------------------------------ -->
-            <main class="entry-content" style="display:grid; grid-gap:1rem; grid-template-columns:repeat(autofit,minnax(300px, 1fr)); max-width:10000px;margin:0px; ">
+            <main class="frontpage entry-content" style="display:grid; grid-gap:1rem; grid-template-columns:repeat(autofit,minnax(300px, 1fr)); max-width:10000px;margin:0px; ">
 			    
-				        <div class= "site-content.widget-area" style="display:flex;flex-flow:column;border:2px solid red;border-radius:1rem;padding:2rem;">
+				        <div class= "frontpage widget-area" tyle="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
 
 									<?php if ( is_active_sidebar( 'self-test' ) ) : ?>
 									<div id="primary-sidebar" class="primary-sidebar widget-area" style="">
@@ -36,7 +36,7 @@
 
 
 				   	
-							<div class= "site-content.widget-area" style="display:flex;flex-flow:column;border:2px solid red;border-radius:1rem;padding:2rem;">
+							<div class= "site-content.widget-area" style="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
 
 									<?php if ( is_active_sidebar( 'past-papers' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
@@ -48,7 +48,7 @@
 				 	
 							
 				 	
-							<div class= "site-content.widget-area" style="display:flex;flex-flow:column;border:2px solid red;border-radius:1rem;padding:2rem;">
+							<div class= "site-content.widget-area" style="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
 
 									<?php if ( is_active_sidebar( 'video-lessons' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
