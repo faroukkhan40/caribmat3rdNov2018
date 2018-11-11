@@ -21,14 +21,16 @@
 
        <!----------------------------------- Page-content------------------------------------- -->
        <!-------------------------------------contains 3 custom widgetize areas------------------------------------------------ -->
-			<main class="frontpage-entry-content" 
-			tyle="display:grid; 
-                   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 				   
-			      grid-gap:1rem;">
+		<div class="entry-content">
+			
 			    
 				        <div class="widget-area">
 
-								<h1>this is the end</h1>	
+								<?php if ( is_active_sidebar( 'self-test' ) ) : ?>
+										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+											<?php dynamic_sidebar( 'self-test' ); ?>
+										</div><!-- #primary-sidebar -->
+									<?php endif; ?>
 
 						</div><!-- .widget-area -->	
 				  
