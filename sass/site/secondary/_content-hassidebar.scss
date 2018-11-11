@@ -26,10 +26,13 @@
     
 
 }
-.site-content .widget-area {
+
+.site-content .frontpage-widget-area {
 	float: left;
 	overflow: hidden;
 	width: 25%;
+	border:2px solid black;
+	margin:5px;
 }
 .site-footer {
 	clear: both;
@@ -49,4 +52,11 @@
 	width:100%;
 	text-align: center;
 	border:2px solid blue;
+}
+.site-content .frontpage-widget-area {
+	display:flex;
+	flex-direction:column;
+	border:2px solid black;
+	border-radius:1rem;
+	padding:2rem;
 }

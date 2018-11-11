@@ -21,22 +21,21 @@
 
        <!----------------------------------- Page-content------------------------------------- -->
        <!-------------------------------------contains 3 custom widgetize areas------------------------------------------------ -->
-            <main class="frontpage entry-content" style="display:grid; grid-gap:1rem; grid-template-columns:repeat(autofit,minnax(300px, 1fr)); max-width:10000px;margin:0px; ">
+			<main class="frontpage-entry-content" 
+			tyle="display:grid; 
+                   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 				   
+			      grid-gap:1rem;">
 			    
-				        <div class= "frontpage widget-area" tyle="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
+				        <div class="widget-area">
 
-									<?php if ( is_active_sidebar( 'self-test' ) ) : ?>
-									<div id="primary-sidebar" class="primary-sidebar widget-area" style="">
-										<?php dynamic_sidebar( 'self-test' ); ?>
-									</div><!-- #primary-sidebar -->
-									<?php endif; ?>
+								<h1>this is the end</h1>	
 
 						</div><!-- .widget-area -->	
 				  
 
 
 				   	
-							<div class= "frontpage widget-area" tyle="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
+							<div class= "frontpage-widget-area" tyle="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
 
 									<?php if ( is_active_sidebar( 'past-papers' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
@@ -48,7 +47,7 @@
 				 	
 							
 				 	
-							<div class= "frontpage widget-area" tyle="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
+							<div class= "frontpage-widget-area" tyle="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
 
 									<?php if ( is_active_sidebar( 'video-lessons' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">

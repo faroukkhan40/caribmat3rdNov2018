@@ -55,4 +55,4 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content"  style="border: 2px solid red; width:100%;">
+	<div id="content" class="site-content"  style="border: 2px solid red; width:100%;display:grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap:1 rem;">
