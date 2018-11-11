@@ -8,12 +8,12 @@
 }
 
 //$color__link-visited - purple
-.widget-title{
+.widget-title {
 	 color:$color__link-visited;
 	 background: #ddd2d2;
 	 font-size: 1em;
 }
-div.frontpage.widget-area{
+#primary > .frontpage.widget-area {
 	display:flex;
 	flex-flow:column;
 	border:2px solid black;

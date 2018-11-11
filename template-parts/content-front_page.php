@@ -36,7 +36,7 @@
 
 
 				   	
-							<div class= "site-content.widget-area" style="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
+							<div class= "frontpage widget-area" tyle="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
 
 									<?php if ( is_active_sidebar( 'past-papers' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
@@ -48,7 +48,7 @@
 				 	
 							
 				 	
-							<div class= "site-content.widget-area" style="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
+							<div class= "frontpage widget-area" tyle="display:flex;flex-flow:column;border:2px solid black;border-radius:1rem;padding:2rem;">
 
 									<?php if ( is_active_sidebar( 'video-lessons' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
