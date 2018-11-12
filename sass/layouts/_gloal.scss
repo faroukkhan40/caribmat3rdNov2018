@@ -11,7 +11,7 @@
 .site-content {	
 	margin: 0 auto;
 }
-
+/* 48em is = 768px*/
 @media screen and (min-width: 48em) {
 /* Typography */
 
@@ -39,7 +39,7 @@
 			width: 40%;
 		}
 	
-		 #secondary.idget-area {
+		 #secondary.widget-area {
 			float: right;
 			padding-top: 0;
 			width: 36%;	
@@ -80,7 +80,7 @@
 				width: $size__ratio-large;
 			}
 
-			.idget-area {
+			.widget-area {
 				width: $size__ratio-small;
 			}
 		}

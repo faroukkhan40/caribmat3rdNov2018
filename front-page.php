@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area"style="100%">
+	<div id="primary" class="content-area"tyle="100%">
 
 	       <main id="main" class="site-main">
           this is front-page eing displayed
