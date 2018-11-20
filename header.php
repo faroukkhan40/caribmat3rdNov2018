@@ -55,4 +55,6 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content"  style="border: 2px solid red; width:100%;">
+
+	<div id="content" class="site-content">
+
