@@ -1,0 +1,17 @@
+//<div id="page" class="site"> div just under body element
+.site{
+	border:2px solid red;
+	margin:0 auto;
+}
+
+/starts in the header
+.site-content {
+	padding: 1em;
+	border:2px solid blue;
+	margin: 0 auto;
+
+	//$query__small: 600px;
+	@media screen and (min-width: $query__small) {
+		padding: 2em;
+	}
+}
