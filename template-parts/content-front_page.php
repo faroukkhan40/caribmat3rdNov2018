@@ -21,10 +21,10 @@
 
        <!----------------------------------- Page-content------------------------------------- -->
        <!-------------------------------------contains 3 custom widgetize areas------------------------------------------------ -->
-		<main class="frontpage-content-wrapper" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr);grid-gap:1rem;">
+		<main class="frontpage" class="widget-area">
 			
 			    
-				        <div class="frontpage-widget-area" style="display:flex; flex-flow:column; border:2px solid black; margin:3px;">
+				        <div class="frontpage-widget">
 
 								<?php if ( is_active_sidebar( 'self-test' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
@@ -37,7 +37,7 @@
 
 
 				   	
-						<div class="frontpage-widget-area" style="border:2px solid black;display:flex;flex-flow:column;border:2px solid black;margin:3px;">
+						<div class="frontpage-widget">
 
 									<?php if ( is_active_sidebar( 'past-papers' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
@@ -49,7 +49,7 @@
 				 	
 							
 				 	
-						<div class="frontpage-widget-area" style="display:flex;flex-flow:column;border:2px solid black;">
+						<div class="frontpage-widget">
 
 									<?php if ( is_active_sidebar( 'video-lessons' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">

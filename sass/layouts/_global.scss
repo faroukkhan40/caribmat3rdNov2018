@@ -4,7 +4,7 @@
 	margin:0 auto;
 }
 
-/starts in the header
+//starts in the header
 .site-content {
 	padding: 1em;
 	border:2px solid blue;
@@ -14,4 +14,12 @@
 	@media screen and (min-width: $query__small) {
 		padding: 2em;
 	}
+}
+//contains primary content 
+#primary.content-area {
+	border:2px solid green;	
+	width:100%;
+	margin:0 auto;
+	overflow: hidden;
+
 }

@@ -10,10 +10,9 @@
 
 get_header();
 ?>
+   <main id="primary" class="content-area">	
 
-	<div id="primary" class="content-area"tyle="100%">
-
-	       <main id="main" class="site-main">
+	      
           this is front-page eing displayed
 		<?php
 		while ( have_posts() ) : the_post();
@@ -27,8 +26,7 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
-         </div><!-- #main -->
-		
+         		
 	</div><!-- #primary -->
 
 <?php

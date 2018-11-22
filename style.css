@@ -659,114 +659,8 @@ a {
   clear: both; }
 
 /*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
-.sticky {
-  display: block; }
-
-.hentry {
-  margin: 0 0 1.5em; }
-
-.updated:not(.published) {
-  display: none; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5em; }
-
-/*--------------------------------------------------------------
-## Comments
---------------------------------------------------------------*/
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
-
-/*--------------------------------------------------------------
-## widgets
---------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. textwidget*/ }
-  .widget select {
-    max-width: 100%; }
-
-.widget-title {
-  color: purple;
-  background: #ddd2d2;
-  font-size: 1em; }
-
-/*--------------------------------------------------------------
-## content has sidebar
---------------------------------------------------------------*/
-
-/*
- * Theme Name: CaribbeanMathAcademy
- *
- * Layout: Sidebar-Content Sidear to the Left/Right
- *
- * Learn more: https://developer.wordpress.org/themes/basics/template-files/
-*/
-.site-content {
-  width: 100%; }
-
-.content-area {
-  float: right;
-  width: 100%; }
-
-.site-main {
-  margin: 0 0 0 25%;
-  overflow: hidden; }
-
-#primary.content-area {
-  float: left;
-  width: 75%; }
-
-.site-content .widget-area {
-  float: left;
-  overflow: hidden;
-  width: 25%; }
-
-.site-footer {
-  clear: both;
-  width: 100%; }
-
-.no-sidebar .content-area {
-  float: none;
-  margin-left: auto;
-  margin-right: auto; }
-
-.no-sidebar.site-main {
-  margin-right: 0; }
-
-#secondary.widget-area {
-  width: 100%;
-  text-align: center;
-  border: 2px solid blue; }
-
-/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-  /* Make sure select elements fit in widgets. textwidget*/ }
-  .widget select {
-    max-width: 100%; }
-
-.widget-title {
-  color: purple;
-  background: #ddd2d2;
-  font-size: 1em; }
-
 /*--------------------------------------------------------------
 # Gloal layouts
 --------------------------------------------------------------*/
@@ -780,6 +674,7 @@ a {
 .site-content {
   margin: 0 auto; }
 
+/* 48em is = 768px*/
 @media screen and (min-width: 48em) {
   /* Typography */
   body,
@@ -807,7 +702,6 @@ a {
     font-size: 11px;
     font-size: 0.6875rem;
     margin-bottom: 2em; } }
-
 
 /* Single posts query_medium 900px
  $size__ratio-small: 30%; */
@@ -840,6 +734,138 @@ a {
       width: 20%; }
     .single.no-sidebar .post-content__wrap .post-content__body {
       width: 70%; } }
+
+#main > div.frontpage-content-wrapper > .frontpage-widget-area {
+  border: 2px solid black;
+  margin: 4px; }
+
+.site {
+  border: 2px solid red;
+  margin: 0 auto; }
+
+.site-content {
+  padding: 1em;
+  border: 2px solid blue;
+  margin: 0 auto; }
+  @media screen and (min-width: 600px) {
+    .site-content {
+      padding: 2em; } }
+
+#primary.content-area {
+  border: 2px solid green;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+  display: block; }
+
+.hentry {
+  margin: 0 0 1.5em; }
+
+.updated:not(.published) {
+  display: none; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em; }
+
+/*--------------------------------------------------------------
+## content has sidebar
+--------------------------------------------------------------*/
+/*
+ * Theme Name: CaribbeanMathAcademy
+ *
+ * Layout: Sidebar-Content Sidear to the Left/Right
+ *
+ * Learn more: https://developer.wordpress.org/themes/basics/template-files/
+*/
+.site-content {
+  width: 100%; }
+
+.content-area {
+  float: right;
+  width: 100%; }
+
+.site-main {
+  margin: 0 0 0 25%;
+  overflow: hidden; }
+
+#primary.content-area {
+  float: left;
+  width: 75%; }
+
+.site-content .frontpage-widget-area {
+  float: left;
+  overflow: hidden;
+  width: 25%;
+  border: 2px solid black;
+  margin: 5px; }
+
+.site-footer {
+  clear: both;
+  width: 100%; }
+
+.no-sidebar .content-area {
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+.no-sidebar.site-main {
+  margin-right: 0; }
+
+#secondary.widget-area {
+  width: 100%;
+  text-align: center;
+  border: 2px solid blue; }
+
+.site-content .frontpage-widget-area {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 2rem; }
+
+/*--------------------------------------------------------------
+## widgets
+--------------------------------------------------------------*/
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. textwidget*/ }
+  .widget select {
+    max-width: 100%; }
+
+.widget-title {
+  color: purple;
+  background: #ddd2d2;
+  font-size: 1em; }
+
+.frontpage-widget-area {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 2rem; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
