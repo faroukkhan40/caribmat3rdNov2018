@@ -740,7 +740,7 @@ a {
   margin: 4px; }
 
 .site {
-  border: 2px solid red;
+  border: 2px solid blue;
   margin: 0 auto; }
 
 .site-content {
@@ -752,7 +752,7 @@ a {
       padding: 2em; } }
 
 #primary.content-area {
-  border: 2px solid green;
+  border: 2px solid blue;
   width: 100%;
   margin: 0 auto;
   overflow: hidden; }
