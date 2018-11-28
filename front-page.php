@@ -13,7 +13,7 @@ get_header();
    <main id="primary" class="content-area">	
 
 	      
-          this is front-page eing displayed
+          this is front-page eing displayed testing that deploy HQ is processing correctly
 		<?php
 		while ( have_posts() ) : the_post();
 			
