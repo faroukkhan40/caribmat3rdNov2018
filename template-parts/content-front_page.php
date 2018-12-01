@@ -32,9 +32,13 @@
 
 					<?php if ( is_active_sidebar( 'self-test' ) ) : ?>
 							
-								<?php dynamic_sidebar( 'self-test' ); ?>
+								<?php dynamic_sidebar( 'self-tes' ); ?>
 							
-						<?php endif; ?>
+						<?php endif;
+						
+						
+						?>
+						
 
 			</div><!-- .widget-area -->	
 	  
