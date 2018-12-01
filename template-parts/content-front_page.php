@@ -11,83 +11,82 @@
 
 		
        <!--------------------------------------------Page-header------------------------------ -->
-			<header class="page-header">
+			
+	   		<header class="entry-header">
+				Header for slider and captions
 				<?php
 				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+			
 
        <!----------------------------------- Page-content------------------------------------- -->
        <!-------------------------------------contains 3 custom widgetize areas------------------------------------------------ -->
-		<main class="frontpage" class="widget-area">
+		<!----------------------------------- Page-content------------------------------------- -->
+       <!-------------------------------------contains 3 custom widgetize areas------------------------------------------------ -->
+	   <section id="frontpage" class="widget-area">
 			
 			    
-				        <div class="frontpage-widget">
+			<div class="frontpage-widget">
 
-								<?php if ( is_active_sidebar( 'self-test' ) ) : ?>
-										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-											<?php dynamic_sidebar( 'self-test' ); ?>
-										</div><!-- #primary-sidebar -->
-									<?php endif; ?>
-
-						</div><!-- .widget-area -->	
-				  
-
-
-				   	
-						<div class="frontpage-widget">
-
-									<?php if ( is_active_sidebar( 'past-papers' ) ) : ?>
-										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-											<?php dynamic_sidebar( 'past-papers' ); ?>
-										</div><!-- #primary-sidebar -->
-									<?php endif; ?>
-
-						</div><!-- .widget-area -->
-				 	
+					<?php if ( is_active_sidebar( 'self-test' ) ) : ?>
 							
-				 	
-						<div class="frontpage-widget">
-
-									<?php if ( is_active_sidebar( 'video-lessons' ) ) : ?>
-										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-											<?php dynamic_sidebar( 'video-lessons' ); ?>
-										</div><!-- #primary-sidebar -->
-									<?php endif; ?>
-
-						</div><!-- .widget-area -->
-					
-
+								<?php dynamic_sidebar( 'self-test' ); ?>
 							
+						<?php endif; ?>
 
-           
-    	   </main><!-- .End frontpage-content-wrapper -->
+			</div><!-- .widget-area -->	
+	  
+
+
+		   
+			<div class="frontpage-widget" >
+
+						<?php if ( is_active_sidebar( 'past-papers' ) ) : ?>
+							
+								<?php dynamic_sidebar( 'past-papers' ); ?>
+							
+						<?php endif; ?>
+
+			</div><!-- .widget-area -->
+		 
+				
+		 
+			<div class="frontpage-widget">
+
+						<?php if ( is_active_sidebar( 'video-lessons' ) ) : ?>
+							
+								<?php dynamic_sidebar( 'video-lessons' ); ?>
+							
+						<?php endif; ?>
+
+			</div><!-- .widget-area -->			
+
+				
+
+</section><!-- .End frontpage-content-wrapper -->
+
+
+		
+		
+		
+		
 
 
 		<!----------------------------------- Page-footer------------------------------------- -->
         <!----------------------------------- ------------------------------------------------ -->
-           <footer class="entry-footer">
-			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'math-cseccxc' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
+		<footer class="entry-footer">
+			   Footer for customer reviews
+			   <?php
+				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				the_archive_description( '<div class="archive-description">', '</div>' );
+			?>		   
+			
 		</footer><!-- .entry-footer -->
+		  
+		  
+		   
 		
 
 
