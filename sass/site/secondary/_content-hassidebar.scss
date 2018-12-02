@@ -18,22 +18,9 @@
 .site-main {
     margin: 0 0 0 25%;
     overflow: hidden;
-}
-#primary.content-area{
+} 
+   
     
-    float:left;
-    width: 75%;
-    
-
-}
-
-.site-content .frontpage-widget-area {
-	float: left;
-	overflow: hidden;
-	width: 25%;
-	border:2px solid black;
-	margin:5px;
-}
 .site-footer {
 	clear: both;
 	width: 100%;
@@ -46,17 +33,4 @@
 }
 .no-sidebar.site-main {
 	margin-right: 0;
-}
-//if there is a sidebar controls the secondary sidebar to the right
-#secondary.widget-area{
-	width:100%;
-	text-align: center;
-	border:2px solid blue;
-}
-.site-content .frontpage-widget-area {
-	display:flex;
-	flex-direction:column;
-	border:2px solid black;
-	border-radius:1rem;
-	padding:2rem;
 }

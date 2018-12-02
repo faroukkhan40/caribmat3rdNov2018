@@ -67,6 +67,84 @@
 
 			</div><!-- .widget-area -->			
 
+			<div class="frontpage-widget">
+
+<?php if ( is_active_sidebar( 'self-test' ) ) : ?>
+		
+			<?php dynamic_sidebar( 'self-test' ); ?>
+		
+	<?php endif;
+	
+	
+	?>
+	
+
+</div><!-- .widget-area -->	
+
+
+
+
+<div class="frontpage-widget" >
+
+	<?php if ( is_active_sidebar( 'past-papers' ) ) : ?>
+		
+			<?php dynamic_sidebar( 'past-papers' ); ?>
+		
+	<?php endif; ?>
+
+</div><!-- .widget-area -->
+
+
+
+<div class="frontpage-widget">
+
+	<?php if ( is_active_sidebar( 'video-lessons' ) ) : ?>
+		
+			<?php dynamic_sidebar( 'video-lessons' ); ?>
+		
+	<?php endif; ?>
+
+</div><!-- .widget-area -->	
+
+<div class="frontpage-widget">
+
+<?php if ( is_active_sidebar( 'self-test' ) ) : ?>
+		
+			<?php dynamic_sidebar( 'self-test' ); ?>
+		
+	<?php endif;
+	
+	
+	?>
+	
+
+</div><!-- .widget-area -->	
+
+
+
+
+<div class="frontpage-widget" >
+
+	<?php if ( is_active_sidebar( 'past-papers' ) ) : ?>
+		
+			<?php dynamic_sidebar( 'past-papers' ); ?>
+		
+	<?php endif; ?>
+
+</div><!-- .widget-area -->
+
+<div class="frontpage-widget" >
+
+<?php if ( is_active_sidebar( 'past-papers' ) ) : ?>
+	
+		<?php dynamic_sidebar( 'past-papers' ); ?>
+	
+<?php endif; ?>
+
+</div><!-- .widget-area -->
+
+
+
 				
 
 </section><!-- .End frontpage-content-wrapper -->
