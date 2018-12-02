@@ -1,0 +1,36 @@
+
+./c/wamp/www/wordpress/wp-content/themes/caribmat3rdNov2018
+
+/*---------------------------------------------(2)-2nd Dec 2018)----------------------------------------------------*/  
+                                              Front page layout
+
+  i) created a new folder in the sass folder named template: this is to uniquely style any template 
+  ii) first template to style will be the front-page template
+          
+    <section id="frontpage" class="widget-area">
+
+          The front page main content consists of a widget area
+          which is given an id of frontpage and a class of widget-area.
+          This section will be the overall container for all widgets on the front page.
+          
+          Each course module (eg: Algebra 101 ) will be displayed in the sidebar as a widget (hence this must be 
+          configured from the widget area in dashboard)
+
+    <div class="frontpage-widget">
+          each widget will be governed by the class of frontpage-widget
+
+/*---------------------------------------------------------------------------------------------------*/ 
+
+
+
+/*---------------------------------------------(1)----------------------------------------------------*/  
+Front page Widget
+
+    build custom widget to populate the front page
+      build as a plugin deltaPc-widget
+    in this widget wrer an image
+                           title
+                           url linking image to video lessons page
+                           description 
+                           button to read 
+  /*-------------------------------------------------------------------------------------------------*/

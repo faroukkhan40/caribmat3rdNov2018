@@ -1,5 +1,8 @@
 
-
+#primary.content-area {
+			float: left;
+			width: 40%;
+		}
 <?php if ( is_active_sidebar( 'self-test' ) ) : ?>
 										<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 											<?php dynamic_sidebar( 'self-test' ); ?>
