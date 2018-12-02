@@ -1,5 +1,5 @@
 
-./c/wamp/www/wordpress/wp-content/themes/caribmat3rdNov2018
+/c/wamp/www/wordpress/wp-content/themes/caribmat3rdNov2018
 
 /*---------------------------------------------(2)-2nd Dec 2018)----------------------------------------------------*/  
                                               Front page layout
