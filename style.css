@@ -515,7 +515,8 @@ a {
     display: none;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    /* each li had a class of menu-itemSmall menu. */ }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -530,10 +531,16 @@ a {
       .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
-        width: 200px; }
+        width: 200px;
+        border: 2px solid green; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
+    .main-navigation ul .menu-item {
+      border: 2px solid green;
+      font-size: 22px;
+      padding: 2px;
+      margin: 4px; }
   .main-navigation li {
     float: left;
     position: relative; }
@@ -779,7 +786,8 @@ a {
 .widget-title {
   color: purple;
   background: #ddd2d2;
-  font-size: 1em; }
+  font-size: 1em;
+  align-self: auto; }
 
 /*--------------------------------------------------------------
 # Infinite scroll
