@@ -506,9 +506,29 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.in-navigation {
+  display: flex;
+  flex-flow: column nowrap;
+  clear: both;
+  height: 50px;
+  line-height: 50px;
+  background: #d9d9d9;
+  border-radius: 2px;
+  box-shadow: inset 0 0 1px 1px #012d35;
+  position: fix;
+  top: 30px;
+  left: 0;
+  width: 80%;
+  z-index: 20;
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%; }
+
 .main-navigation {
   clear: both;
   display: block;
+  ackground: #d9d9d9;
   float: left;
   width: 100%; }
   .main-navigation ul {
@@ -516,7 +536,7 @@ a {
     list-style: none;
     margin: 0;
     padding-left: 0;
-    /* each li had a class of menu-itemSmall menu. */ }
+    /* each li had a class of menu-item.#d9d9d9; */ }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -536,14 +556,24 @@ a {
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
+      .main-navigation ul li:hover > ul:hover > a,
+      .main-navigation ul li:hover > ul.focus > a,
+      .main-navigation ul li.focus > ul:hover > a,
+      .main-navigation ul li.focus > ul.focus > a {
+        background: red; }
     .main-navigation ul .menu-item {
-      border: 2px solid green;
+      border: 2px solid #c4c4c4;
       font-size: 22px;
-      padding: 2px;
-      margin: 4px; }
+      padding: 5px;
+      margin: 2px;
+      background: #d9d9d9;
+      border-radius: 25px; }
+    .main-navigation ul li.menu-item:hover {
+      background: #c5c6c1; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    background: #d9d9d9; }
   .main-navigation a {
     display: block;
     text-decoration: none; }

@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'math-cseccxc' ); ?></a>
 
-	<header id="masthead" class="site-header" style="border:2px solid black;margin:5px;background:#eec;">
+	<header id="masthead" class="site-header" style="border:2px solid black;margin:5px;background: #d9d9d9;">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();

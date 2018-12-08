@@ -1,9 +1,31 @@
-.main-navigation {
+
+.in-navigation {
+	display: flex;
+	flex-flow: column nowrap;
+	clear: both;
+	height: 50px;
+	line-height: 50px;
+	background: #d9d9d9;
+	border-radius: 2px;
+	box-shadow: inset 0 0 1px 1px #012d35;
+	position: fix;
+	top: 30px;
+	left:0;
+	width: 80%;
+	z-index:20;
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
-	
+}
+
+
+.main-navigation {
+	clear: both;
+	display: block;
+	ackground: #d9d9d9;
+	float: left;	
+	width: 100%;
 
 	ul {
 		display: none;
@@ -50,23 +72,36 @@
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
+			
+		  }
 
 		}
-		/* each li had a class of menu-itemSmall menu. */
+		/* each li had a class of menu-item.#d9d9d9; */
 		.menu-item{
-			border:2px solid green;
+			border:2px solid #c4c4c4;
 			font-size: 22px;
-			padding:2px;
-			margin:4px;
-		}
-	}
+			padding:5px;
+			margin:2px;
+			background:#d9d9d9;
+			border-radius: 25px;
 
+			
+		}
+		li.menu-item:hover {
+			background:#c5c6c1;
+		}
+
+
+
+	}
+	  
 	li {
 		float: left;
 		position: relative;
-
+		background:#d9d9d9;
 		&:hover > a,
 		&.focus > a {
+			
 		}
 	}
 
