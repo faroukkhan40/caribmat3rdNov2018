@@ -16,17 +16,30 @@
  *
  * @uses math_cseccxc_header_style()
  */
+
+
+
 function math_cseccxc_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'math_cseccxc_custom_header_args', array(
-		'default-image'          => '',
+		'default-image'          => get_parent_theme_file_uri( '/assets/images/header.jpg' ),
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 2000,
+		'height'                 => 1200,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'math_cseccxc_header_style',
 	) ) );
+
+	register_default_headers( array(
+		'default-image' => array(
+			'url'           => '%s/assets/images/header.jpg',
+			'thumbnail_url' => '%s/assets/images/header.jpg',
+			'description'   => __( 'Default Header Image', 'math_cseccxc' ),
+		),
+	) );
+
 }
 add_action( 'after_setup_theme', 'math_cseccxc_custom_header_setup' );
+
 
 if ( ! function_exists( 'math_cseccxc_header_style' ) ) :
 	/**

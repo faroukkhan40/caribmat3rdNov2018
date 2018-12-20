@@ -513,7 +513,7 @@ a {
   height: 50px;
   line-height: 50px;
   background: #d9d9d9;
-  border-radius: 2px;
+  border-radius: 10px;
   box-shadow: inset 0 0 1px 1px #012d35;
   position: fix;
   top: 30px;
@@ -528,15 +528,15 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  ackground: #d9d9d9;
+  background: #d9d9d9;
   float: left;
-  width: 100%; }
+  width: 100%;
+  /* each li had a class of menu-item.#d9d9d9; */ }
   .main-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
-    padding-left: 0;
-    /* each li had a class of menu-item.#d9d9d9; */ }
+    padding-left: 0; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
@@ -556,27 +556,24 @@ a {
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
-      .main-navigation ul li:hover > ul:hover > a,
-      .main-navigation ul li:hover > ul.focus > a,
-      .main-navigation ul li.focus > ul:hover > a,
-      .main-navigation ul li.focus > ul.focus > a {
-        background: red; }
-    .main-navigation ul .menu-item {
-      border: 2px solid #c4c4c4;
-      font-size: 22px;
-      padding: 5px;
-      margin: 2px;
-      background: #d9d9d9;
-      border-radius: 25px; }
-    .main-navigation ul li.menu-item:hover {
-      background: #c5c6c1; }
-  .main-navigation li {
-    float: left;
-    position: relative;
-    background: #d9d9d9; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+  .main-navigation .menu-item {
+    border: 2px solid #c4c4c4;
+    font-size: 22px;
+    padding: 5px;
+    margin: 2px;
+    background: #d9d9d9;
+    border-radius: 25px; }
+  .main-navigation li.menu-item:hover {
+    background: #c5c6c1; }
+
+li {
+  float: left;
+  position: relative;
+  background: #d9d9d9; }
+
+a {
+  display: block;
+  text-decoration: none; }
 
 /* Small menu. */
 .menu-toggle,
@@ -707,11 +704,19 @@ a {
 
 .site-content {
   padding: 1em;
-  border: 2px solid blue;
+  border: 2px solid yellow;
   margin: 0 auto; }
   @media screen and (min-width: 600px) {
     .site-content {
       padding: 2em; } }
+
+.site-header {
+  background-color: #fafafa;
+  position: relative;
+  border: 2px solid red;
+  width: 98%;
+  margin: 5px;
+  padding: 5px; }
 
 /*--------------------------------------------------------------
 # Special templaes layouts
@@ -724,7 +729,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem;
-  border: 2px solid red;
+  border: 2px solid #09ff00;
   margin: 5px auto;
   background-color: grey; }
 

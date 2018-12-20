@@ -51,6 +51,18 @@ if ( ! function_exists( 'math_cseccxc_setup' ) ) :
 			'menu-1' => esc_html__( 'Primary', 'header_Menu' ),
 		) );
 
+		//Add support for core custom header image background	
+		
+		$args = array(
+			'flex-width'    => true,
+			'width'         => 980,
+			'flex-height'   => true,
+			'height'        => 200,
+			'default-image' => get_template_directory_uri() . '/images/header.jpg',
+		);
+		add_theme_support( 'custom-header', $args );
+		
+		
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.

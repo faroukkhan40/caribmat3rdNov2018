@@ -24,7 +24,21 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'math-cseccxc' ); ?></a>
 
-	<header id="masthead" class="site-header" style="border:2px solid black;margin:5px;background: #d9d9d9;">
+	
+
+
+	
+	<header id="masthead" class="site-header" >
+		
+		<?php if ( get_header_image() ) : ?>
+				<div id="site-header">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img alt="" src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>">
+					</a>
+				</div>
+		<?php endif; ?>
+	
+		
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -63,7 +77,7 @@
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
+	
 
 	<div id="content" class="site-content">
 

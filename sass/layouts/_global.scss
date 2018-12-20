@@ -7,11 +7,19 @@
 //starts in the header
 .site-content {
 	padding: 1em;
-	border:2px solid blue;
+	border:2px solid yellow;
 	margin: 0 auto;
 
 	//$query__small: 600px;
 	@media screen and (min-width: $query__small) {
 		padding: 2em;
 	}
+}
+.site-header {
+	background-color: #fafafa;
+	position: relative;
+	border:2px solid red;
+	width:98%;
+	margin:5px;
+	padding:5px;
 }
