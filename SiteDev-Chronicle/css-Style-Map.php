@@ -1,5 +1,5 @@
 
-/c/wamp/www/wordpress/wp-content/themes/caribmat3rdNov2018
+/c/wamp/www/wp-caribmath/wp-content/themes/caribmat3rdNov2018
 
 
 <?php 
