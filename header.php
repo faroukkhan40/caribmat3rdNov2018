@@ -22,15 +22,15 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'math-cseccxc' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'CaribbeanMathAcademy' ); ?></a>
 
 	
 	<header id="masthead" class="site-header" role="banner">
 
 			<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
 
-			<?php if ( has_nav_menu( 'top' ) ) : ?>
-				<div class="navigation-top">
+			<?php if ( has_nav_menu( 'menu-1' ) ) : ?>
+				<div class="nav navbar-nav">
 					<div class="wrap">
 						<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
 					</div><!-- .wrap -->

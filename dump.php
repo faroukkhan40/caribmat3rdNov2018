@@ -1,3 +1,28 @@
+<?php wp_nav_menu( array(
+		'theme_location' => 'menu-1',
+		'menu_id'        => 'primary-menu',
+		'menu_class'     => "nav navbar-nav", 
+	) ); ?>
+
+<button class="menu-toggle" aria-controls="primary-menu" 
+	  aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'math-cseccxc' ); ?></button>
+<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'menu-1', 'CaribbeanMathAcademy' ); ?>">
+	<button class="menu-toggle" aria-controls="top-menu" aria-expanded="false">
+		<?php
+		echo CaribbeanMathAcademy_get_svg( array( 'icon' => 'bars' ) );
+		echo CaribbeanMathAcademy_get_svg( array( 'icon' => 'close' ) );
+		_e( 'Menu', 'CaribbeanMathAcademy' );
+		?>
+	</button>
+
+
+<?php wp_nav_menu( array(
+		'theme_location' => 'menu-1',
+		'menu_id'        => 'primary-menu',
+		'menu_class'     => "nav navbar-nav", 
+	) ); ?>
+
+
 <header id="masthead" class="site-header" >
 		
 		<?php if ( get_header_image() ) : ?>

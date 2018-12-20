@@ -718,6 +718,12 @@ a {
   margin: 5px;
   padding: 5px; }
 
+/* Layout */
+.wrap {
+  max-width: 1000px;
+  padding-left: 3em;
+  padding-right: 3em; }
+
 /*--------------------------------------------------------------
 # Special templaes layouts
 --------------------------------------------------------------*/

@@ -20,9 +20,9 @@ if ( ! function_exists( 'math_cseccxc_setup' ) ) :
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on CaribbeanMathAcademy, use a find and replace
-		 * to change 'math-cseccxc' to the name of your theme in all the template files.
+		 * to change 'CaribbeanMathAcademy' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'math-cseccxc', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'CaribbeanMathAcademy', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -121,9 +121,9 @@ add_action( 'after_setup_theme', 'math_cseccxc_content_width', 0 );
  */
 function math_cseccxc_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'math-cseccxc' ),
+		'name'          => esc_html__( 'Sidebar', 'CaribbeanMathAcademy' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'math-cseccxc' ),
+		'description'   => esc_html__( 'Add widgets here.', 'CaribbeanMathAcademy' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -134,9 +134,9 @@ add_action( 'widgets_init', 'math_cseccxc_widgets_init' );
 
 function math_selftest_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'self-test', 'math-cseccxc' ),
+		'name'          => esc_html__( 'self-test', 'CaribbeanMathAcademy' ),
 		'id'            => 'self-test',
-		'description'   => esc_html__( 'Link to selftest here.', 'math-cseccxc' ),
+		'description'   => esc_html__( 'Link to selftest here.', 'CaribbeanMathAcademy' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -147,9 +147,9 @@ add_action( 'widgets_init', 'math_selftest_widgets_init' );
 
 function math_videolessons_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'video-lessons', 'math-cseccxc' ),
+		'name'          => esc_html__( 'video-lessons', 'CaribbeanMathAcademy' ),
 		'id'            => 'video-lessons',
-		'description'   => esc_html__( 'Link to video lessons here.', 'math-cseccxc' ),
+		'description'   => esc_html__( 'Link to video lessons here.', 'CaribbeanMathAcademy' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -160,9 +160,9 @@ add_action( 'widgets_init', 'math_videolessons_widgets_init' );
 
 function math_pastpapers_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'past-papers', 'math-cseccxc' ),
+		'name'          => esc_html__( 'past-papers', 'CaribbeanMathAcademy' ),
 		'id'            => 'past-papers',
-		'description'   => esc_html__( 'Link to video lessons here.', 'math-cseccxc' ),
+		'description'   => esc_html__( 'Link to video lessons here.', 'CaribbeanMathAcademy' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -176,11 +176,11 @@ add_action( 'widgets_init', 'math_pastpapers_widgets_init' );
  * Enqueue scripts and styles.
  */
 function math_cseccxc_scripts() {
-	wp_enqueue_style( 'math-cseccxc-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'CaribbeanMathAcademy-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'math-cseccxc-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'CaribbeanMathAcademy-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'math-cseccxc-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'CaribbeanMathAcademy-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
