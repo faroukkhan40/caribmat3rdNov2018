@@ -370,10 +370,10 @@ input,
 select,
 textarea {
   color: #333;
-  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 15px;
+  font-family: "Helvetica Neue" "Libre Franklin", "", helvetica, arial, sans-serif;
+  font-size: 16px;
   font-size: 0.9375rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.66; }
 
 h1,
@@ -398,7 +398,8 @@ h6:first-child {
 h1 {
   font-size: 24px;
   font-size: 1.5rem;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #2b0049; }
 
 h2,
 .home.blog .entry-title {
@@ -434,12 +435,9 @@ h6 {
   font-weight: 800; }
 
 p {
+  font-size: 15px;
   margin: 0 0 1.5em;
   padding: 0; }
-
-p {
-  margin-bottom: 1.5em;
-  color: lightskyblue; }
 
 dfn, cite, em, i {
   font-style: italic; }
