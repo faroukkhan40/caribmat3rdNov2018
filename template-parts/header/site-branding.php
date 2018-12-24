@@ -9,7 +9,7 @@
  */
 
 ?>
-<div class="site-branding">
+
 	<div class="wrap">
 
 		<?php the_custom_logo(); ?>
@@ -32,4 +32,4 @@
 
 		
 	</div><!-- .wrap -->
-</div><!-- .site-branding -->
+
