@@ -30,6 +30,7 @@ get_header();
 			endif;
 
 		endwhile; // End of the loop.
+		   echo paginate_links();	
 		?>
 
 		</main><!-- #main -->

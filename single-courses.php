@@ -1,4 +1,3 @@
-
 <?php
 /**
  * The template for displaying all single posts
@@ -13,12 +12,12 @@ get_header();
 
 	<div id="primary" class="content-area" style="border:2px solid purple;width:70%;float:left;clear:both;margin:2px;">
 		<main id="main" class="site-main">
-             single-self_test.php
+             single-courses.php
 		<?php
 		while ( have_posts() ) : the_post();
 
 			
-			get_template_part( 'template-parts/content', get_post_type() );
+			get_template_part( 'template-parts/content','courses' );
 
            	
 
@@ -34,4 +33,3 @@ get_header();
 get_sidebar();
 get_footer();
 ?>
-

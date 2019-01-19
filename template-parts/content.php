@@ -52,6 +52,36 @@
 			'after'  => '</div>',
 		) );
 		?>
+		<!-- .post ACF ---------------------------------------------------------------------->
+		
+		
+		
+		<?php      
+		global $post;
+		$original_post = $post;
+		$related = cptr_populate($post->ID);
+		foreach ( $related as $post )
+		{
+			setup_postdata($post);
+			echo '<p><a href="' . get_permalink() . '">' . get_the_title() . '</a></p>';
+		}
+		$post = $original_post;
+		setup_postdata($post);
+		
+		
+		
+
+?>
+		
+		
+
+
+
+
+
+
+
+<!-- .Post Acf ------------------------------------------------------------------------------------------>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
